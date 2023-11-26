@@ -1,0 +1,37 @@
+/*
+Student Name: Helix LeRoy
+File Name: styles.css
+Date: 11/26/2023
+*/
+
+/*CSS Reset*/
+body, footer{
+  margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/*Responsive images*/
+img{
+  max-width: 100%;
+  display: block;
+}
+
+/*Navigation rules*/
+nav ul{
+  background-color: darkblue;
+
+}
+nav li{
+  text-decoration: none;
+  font-size: 1.2em;
+}
+nav li a{
+  font-style: italic;
+  color:white;
+}
+
+/*header rules*/
+header{
+  display: block;
+}
