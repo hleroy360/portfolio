@@ -62,6 +62,10 @@ header img{
   padding: 2%;
 }
 
+header h2 {
+  font-family: 'Shadows Into Light', cursive;
+}
+
 header h1, header h2{
   text-align: center;
 }
@@ -145,7 +149,90 @@ footer a{
   padding: 2%;
 }
 
+.round {
+  border-radius: 25px;
+}
 
+/*styles for mobile screens*/
+@media only screen and (min-width: 620px) and (max-width: 999px) {
+  /*hide tab-desk class and display mobile class*/
+  .tab-desk {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  /*header styles*/
+  .mobile h1 {
+    font-size: 2em;
+  }
+
+  .mobile h2 {
+    font-size: 1.5em;
+  }
+
+  /*navigation rules*/
+  nav {
+    width: 100%;
+  }
+  nav li {
+    font-size: 2em;
+    width: 14%;
+  }
+  
+}
+
+/*styles for tablet to desktop screens*/
+@media only screen and (min-width: 1000px) {
+  /*hide tab-desk class and display mobile class*/
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  /*header styles*/
+
+  .tab-desk .header-text {
+    width: 70%;
+    text-align: center;
+
+  }
+  .tab-desk h1 {
+    display: inline;
+  }
+
+  /*header styles*/
+  .tab-desk h2 {
+    display: inline;
+    padding-left: 3%;
+  }
+  
+  .tab-desk img {
+    width:20%;
+    margin: auto 0;
+  }
+  
+  .tab-desk .header-top {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    width: 60%;
+  }
+
+  .tab-desk img {
+    display: inline-block;
+  }
+
+  .tab-desk .header-text {
+    display:inline-block;
+    padding-top: 2%;
+  }
+}
 
 /*pallete
 #2D2D4E - space cadet
