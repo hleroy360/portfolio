@@ -153,6 +153,13 @@ footer a{
   border-radius: 25px;
 }
 
+.tab-desk {
+  display:none;
+}
+.mobile {
+  display: block
+}
+
 /*styles for mobile screens*/
 @media only screen and (min-width: 620px) and (max-width: 999px) {
   /*hide tab-desk class and display mobile class*/
@@ -241,5 +248,3 @@ footer a{
 #C9ADA7 - Pale dogwood
 #F2E9E4 - Isabelline
 */
-
-
