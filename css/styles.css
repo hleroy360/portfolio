@@ -47,6 +47,10 @@ nav li a{
   text-decoration: none;
 }
 
+nav li a:hover {
+  color: #F2E9E4;
+}
+
 
 /*header rules*/
 header{
@@ -122,6 +126,7 @@ footer a{
 #cat{
   padding-bottom: 5%;
 }
+
 #cat img{
   margin-left: auto;
   margin-right: auto;
@@ -153,6 +158,8 @@ footer a{
   border-radius: 25px;
 }
 
+
+/*the default state of tab-desk and mobile when media queries aren't activated*/
 .tab-desk {
   display:none;
 }
@@ -160,7 +167,8 @@ footer a{
   display: block
 }
 
-/*styles for mobile screens*/
+
+/*styles for mobile screens, applies to header*/
 @media only screen and (min-width: 620px) and (max-width: 999px) {
   /*hide tab-desk class and display mobile class*/
   .tab-desk {
@@ -171,7 +179,7 @@ footer a{
     display: block;
   }
 
-  /*header styles*/
+  /*General header styles*/
   .mobile h1 {
     font-size: 2em;
   }
@@ -184,14 +192,15 @@ footer a{
   nav {
     width: 100%;
   }
+
   nav li {
-    font-size: 2em;
-    width: 14%;
+    font-size: 1.5em;
+    width: 15%;
   }
-  
 }
 
-/*styles for tablet to desktop screens*/
+
+/*styles for tablet to desktop screens, applies to header*/
 @media only screen and (min-width: 1000px) {
   /*hide tab-desk class and display mobile class*/
   .tab-desk {
@@ -203,27 +212,6 @@ footer a{
   }
 
   /*header styles*/ 
-
-  .tab-desk .header-text {
-    width: 70%;
-    text-align: center;
-
-  }
-  .tab-desk h1 {
-    display: inline;
-  }
-
-  /*header styles*/
-  .tab-desk h2 {
-    display: inline;
-    padding-left: 3%;
-  }
-  
-  .tab-desk img {
-    width:20%;
-    margin: auto 0;
-  }
-  
   .tab-desk .header-top {
     margin-left: auto;
     margin-right: auto;
@@ -232,14 +220,36 @@ footer a{
   }
 
   .tab-desk img {
+    width:20%;
+    margin: auto 0;
     display: inline-block;
   }
 
   .tab-desk .header-text {
+    width: 70%;
+    text-align: center;
     display:inline-block;
     padding-top: 2%;
   }
+
+  .tab-desk h1 {
+    display: inline;
+  }
+
+  .tab-desk h2 {
+    display: inline;
+    padding-left: 3%;
+  }
+
+  /*dynamic pseudo-class for the media query*/
+  /*adds side borders when hovering over nav elements on desktop or tablet*/
+  nav li:hover {
+    border: 1px solid #c9ada7;
+    border-top: none;
+    border-bottom:none;
+  }
 }
+
 
 /*pallete
 #2D2D4E - space cadet
