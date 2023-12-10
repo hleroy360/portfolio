@@ -22,7 +22,7 @@ Date: 11/12/2023
     <header>
       <div class="tab-desk">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
           <div class="header-text">
             <h1>Contact</h1>
             <h2>How to get a hold of me</h2>
@@ -31,10 +31,10 @@ Date: 11/12/2023
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -43,7 +43,7 @@ Date: 11/12/2023
 
       <div class="mobile">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
           <div class="header-text">
             <h1>Contact</h1>
             <h2>How to get a hold of me</h2>
@@ -52,10 +52,10 @@ Date: 11/12/2023
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -67,19 +67,18 @@ Date: 11/12/2023
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
     <main>
-      <div id="contact">
-
-        <p><strong>Address:</strong> <br>
-        123 Cat Street<br>
+      <article id="contact" class="grid-contact">
+        <h3><strong>Address:</strong></h3>
+        <p>123 Cat Street<br>
         Town, NH 01234</p>
 
-        <p><strong>Phone Number:</strong><br>
-        (555)555-5555</p>
+        <h3><strong>Phone Number:</strong></h3>
+        <p>(555)555-5555</p>
         
         <p><strong>E-mail:</strong><br>
           <a href="mailto:hjl1015@usnh.edu">hjl1015@usnh.edu</a>
         </p>
-      </div>
+      </article>
     </main>
 
   </body>
@@ -89,4 +88,6 @@ Date: 11/12/2023
     <p> &copy; Copyright 2023.</p>
     <p>Contact: <a href="mailto:hjl1015@usnh.edu">hjl1015@usnh.edu</a></p>
   </footer>
+
+
 </html>

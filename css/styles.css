@@ -5,7 +5,7 @@ Date: 11/26/2023
 */
 
 /*CSS Reset*/
-body, footer{
+body, footer, article, section, aside, figure, figcaption, div{
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -16,22 +16,23 @@ body{
   background-color: #F2E9E4;
 }
 
-img{
-  max-width: 100%;
+/*img{
+  width: 100%;
   display: block;
-}
+}*/
+
 
 
 /*Navigation rules*/
-nav{
+/*nav{
   padding: 1%;
   
-}
+}*/
 
 nav li{
   display: inline-block;
-  font-size: 1.2em;
-  padding: 1% 5%;
+  /*font-size: 1.2em;
+  padding: 1% 5%;*/
   text-decoration: none;
 }
 
@@ -45,6 +46,7 @@ nav li a{
   color:#C9ADA7;
   font-weight: bold;
   text-decoration: none;
+  width: 100%;
 }
 
 nav li a:hover {
@@ -125,6 +127,7 @@ footer a{
 
 #cat{
   padding-bottom: 5%;
+  text-align: center;
 }
 
 #cat img{
@@ -134,7 +137,7 @@ footer a{
   padding:1%;
 }
 
-#cat h2, #art h2{
+.center{
   text-align: center;
 }
 
@@ -167,6 +170,35 @@ footer a{
   display: block
 }
 
+/*The grid set up for navigation and main*/
+.nav-grid ul{
+  display:grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+/*main grid*/
+.grid {
+  display:grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+}
+
+/*grid for project page*/
+.project-grid {
+  display:grid;
+  grid-template-columns: auto;
+  grid-gap: 20px;
+  border-bottom: 3px solid #C9ADA7;
+  margin-bottom: 5%;
+  padding-bottom: 2%;
+}
+
+.project-grid img {
+  width: 80%;
+}
+
+
 
 /*styles for mobile screens, applies to header*/
 @media only screen and (min-width: 620px) and (max-width: 999px) {
@@ -188,15 +220,39 @@ footer a{
     font-size: 1.5em;
   }
 
+  .mobile img {
+    display: block;
+  }
+
   /*navigation rules*/
   nav {
-    width: 100%;
+    width: 95%;
   }
 
   nav li {
-    font-size: 1.5em;
-    width: 15%;
+    font-size: 2em;
+
+    /*modified the mobile nav here to make it stand out more*/
+    padding: 2% 1%;
+    margin: auto 5%;
+    border: 5px solid #C9ADA7;
+    background-color: #F2E9E4;
+    border-radius: 5px;
+    /*width: 15%;*/
   }
+
+  nav li a {
+    color: #4A4E69;
+  }
+
+  nav li:hover {
+    border: 5px solid #C9ADA7;
+  }
+
+  nav li a:hover {
+    color: #4A4E69;
+  }
+
 }
 
 
@@ -219,26 +275,31 @@ footer a{
     width: 60%;
   }
 
-  .tab-desk img {
+  .tab-desk header img {
     width:20%;
     margin: auto 0;
     display: inline-block;
   }
 
-  .tab-desk .header-text {
-    width: 70%;
+  .tab-desk header figcaption {
+    width: 80%;
     text-align: center;
     display:inline-block;
     padding-top: 2%;
   }
-
-  .tab-desk h1 {
-    display: inline;
+  
+  .header-top figcaption {
+    float: right;
   }
 
-  .tab-desk h2 {
-    display: inline;
+  .tab-desk header h1 {
+    display: inline-block;
+  }
+
+  .tab-desk header h2 {
+    display: inline-block;
     padding-left: 3%;
+    margin: 0;
   }
 
   /*dynamic pseudo-class for the media query*/
@@ -248,6 +309,50 @@ footer a{
     border-top: none;
     border-bottom:none;
   }
+
+  /*The grid set up for navigation and main*/
+  .nav-grid ul{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+  }
+
+  .grid {
+    display:grid;
+    grid-template-columns: 60% auto;
+    grid-gap: 20px;
+  }
+
+  .grid-galley {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+  }
+
+  .project-grid {
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+    border-bottom: 3px solid #C9ADA7;
+    margin-bottom: 5%;
+    padding-bottom: 2%;
+  }
+
+
+  /*rules for the aside*/
+  aside {
+    background-color: #C9ADA7;
+    border-radius: 10px;
+  }
+
+  #languages {
+    padding: 5% 10%;
+    font-weight: bold;
+    font-size: 1.4em;
+    line-height: 200%;
+  }
+
+
 }
 
 

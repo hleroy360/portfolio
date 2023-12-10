@@ -21,19 +21,21 @@ Date: 11/12/2023
     <header>
       <div class="tab-desk">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
-          <div class="header-text">
-            <h1>Template</h1>
-            <h2>Welcome to my website!</h2>
-          </div>
+          <figure>
+            <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
+            <figcaption>
+              <h1>About Me</h1>
+              <h2>Welcome to my website!</h2>
+            </figcaption>
+          </figure>
         </div>
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -42,7 +44,7 @@ Date: 11/12/2023
 
       <div class="mobile">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
           <div class="header-text">
             <h1>About Me</h1>
             <h2>Welcome to my website!</h2>
@@ -51,10 +53,10 @@ Date: 11/12/2023
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -66,11 +68,12 @@ Date: 11/12/2023
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
     <main>
-      <article>
-        <h2>Section title</h2>
+      <section>
+        <h2>Article title</h2>
         <p>This is where the text for the section will go</p>
-      </article>
+      </section>
     </main>
+
 
   </body>
 
@@ -78,4 +81,5 @@ Date: 11/12/2023
     <hr>
     <p> &copy; Copyright 2023.</p>
   </footer>
+
 </html>

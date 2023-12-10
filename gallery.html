@@ -21,7 +21,7 @@ Date: 11/19/2023
     <header>
       <div class="tab-desk">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
           <div class="header-text">
             <h1>Gallery</h1>
             <h2>Just a bunch of photos right now</h2>
@@ -30,10 +30,10 @@ Date: 11/19/2023
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -42,7 +42,7 @@ Date: 11/19/2023
 
       <div class="mobile">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
           <div class="header-text">
             <h1>About Me</h1>
             <h2>Welcome to my website!</h2>
@@ -51,10 +51,10 @@ Date: 11/19/2023
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -66,16 +66,28 @@ Date: 11/19/2023
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
     <main>
-      <div id="cat">
-        <h2>My Cat</h2>
-        <img src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+      <h2 class="center">My Cat</h2>
+      <div id="cat" class="grid">
+        <figure>
+          <img src="images/SophieKitten.png" alt="a kitten playing with a toy">
+          <figcaption>My cat, Sophie, as a kitten playing with a pipe cleaner.</figcaption>
+        </figure>
       </div>
-      <div id="art">
-        <h2>My Drawings</h2>
-        <img src="images/Bunnie.jpg" alt="a drawing of Bunnie from the game Animal Crossing"/>
-        <img src="images/Isabelle.jpg" alt="a drawing of Isabelle from the game Animal Crossing"/>
+
+      <h2 class="center">My Drawings</h2>  
+      <div id="art" class="grid">
+        <figure>
+          <img src="images/Bunnie.jpg" alt="a drawing of Bunnie from the game Animal Crossing">
+          <figcaption>Bunnie from the game Animal Crossing: New Horizons</figcaption>
+        </figure>
+        <figure>
+          <img src="images/Isabelle.jpg" alt="a drawing of Isabelle from the game Animal Crossing">
+          <figcaption>Isabelle from the game Animal Crossing: New Horizons</figcaption>
+        </figure>
       </div>
     </main>
+
+
 
   </body>
 
@@ -84,4 +96,6 @@ Date: 11/19/2023
     <p> &copy; Copyright 2023.</p>
     <p>Contact: <a href="mailto:hjl1015@usnh.edu">hjl1015@usnh.edu</a></p>
   </footer>
+
+
 </html>

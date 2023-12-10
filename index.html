@@ -20,19 +20,24 @@ Date: 11/19/2023
     <header>
       <div class="tab-desk">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <figure>
+            <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
+            <figcaption>
+              <h1>About Me</h1>
+              <h2>Welcome to my website!</h2>
+            </figcaption>
+          </figure>
           <div class="header-text">
-            <h1>About Me</h1>
-            <h2>Welcome to my website!</h2>
+
           </div>
         </div>
 
         <hr>
   
-        <nav>
+        <nav class="nav-grid">
           <ul>
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -41,7 +46,7 @@ Date: 11/19/2023
 
       <div class="mobile">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy"/>
+          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
           <div class="header-text">
             <h1>About Me</h1>
             <h2>Welcome to my website!</h2>
@@ -50,10 +55,10 @@ Date: 11/19/2023
 
         <hr>
   
-        <nav>
-          <ul>
+        <nav class="nav-grid">
+          <ul >
             <li><a href="index.html">About Me</a></li>
-            <li><a href="#">Projects</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul> 
@@ -65,17 +70,25 @@ Date: 11/19/2023
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
     <main>
-      <div id="languages">
-        <h2>Languages that I know:</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>SQL</li>
-        </ul>
+      <div class="grid">
+        <article id="about-me">
+          <h2>Intro</h2>
+          <p>Hello my name is Helix. I am working towards a Bachelor's in Information Technology. I am currently an IT intern working at Walkin' Pets. </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Et odio pellentesque diam volutpat commodo sed egestas. Suscipit adipiscing bibendum est ultricies integer quis. Consectetur libero id faucibus nisl tincidunt eget nullam non. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl. Auctor neque vitae tempus quam pellentesque nec nam aliquam sem. Ultrices eros in cursus turpis. Nec tincidunt praesent semper feugiat nibh. Facilisis leo vel fringilla est. Amet volutpat consequat mauris nunc congue nisi. Elementum pulvinar etiam non quam lacus suspendisse faucibus interdum. Convallis tellus id interdum velit laoreet id. Sit amet commodo nulla facilisi nullam vehicula ipsum. Pellentesque sit amet porttitor eget. Posuere morbi leo urna molestie. Hendrerit gravida rutrum quisque non tellus orci. Euismod nisi porta lorem mollis aliquam ut porttitor leo. Enim blandit volutpat maecenas volutpat. Malesuada nunc vel risus commodo.</p>
+        </article>
+        <aside id="languages">
+          <h2>Languages that I know:</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>SQL</li>
+          </ul>
+        </aside>
       </div>
-      <div id="college">
+
+      <section id="college">
         <h2>My College</h2>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.3608244215384!2d-70.9418961154955!3d43.13895181111708!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e293bc10e36e81%3A0x3da108494b0abc36!2sUniversity%20of%20New%20Hampshire!5e0!3m2!1sen!2sus!4v1700432192406!5m2!1sen!2sus"
@@ -85,8 +98,10 @@ Date: 11/19/2023
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-      </div>
+      </section>
     </main>
+
+
 
   </body>
 
@@ -95,4 +110,6 @@ Date: 11/19/2023
     <p> &copy; Copyright 2023.</p>
     <p>Contact: <a href="mailto:hjl1015@usnh.edu">hjl1015@usnh.edu</a></p>
   </footer>
+
+
 </html>
