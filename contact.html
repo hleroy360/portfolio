@@ -67,6 +67,7 @@ Date: 11/12/2023
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
     <main>
+      <div class="grid">
       <article id="contact" class="grid-contact">
         <h3><strong>Address:</strong></h3>
         <p>123 Cat Street<br>
@@ -79,6 +80,26 @@ Date: 11/12/2023
           <a href="mailto:hjl1015@usnh.edu">hjl1015@usnh.edu</a>
         </p>
       </article>
+        <form>
+          <fieldset>
+            <label for="yName">Your Name:</label>
+            <input type="text" id="yName" name="yName">
+
+            <label for="pName">Pet's Name:</label>
+            <input type="text" id="pName" name="pName">
+
+            <label for="pSpecies">Pet's Species:</label>
+            <input type="text" id="pSpecies" name="pSpecies">
+
+            <label for="pAge">Pet's Species:</label>
+            <input type="number" id="pAge" name="pAge">
+
+            <label for="other">Anthing else to add about your pet?</label><br>
+            <textarea cols="30" rows="3" id="other" name="other"></textarea>
+            <input type="submit" value="Submit" class="btn">
+          </fieldset>
+        </form>
+      </div>
     </main>
 
   </body>

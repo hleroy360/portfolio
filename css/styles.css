@@ -5,7 +5,7 @@ Date: 11/26/2023
 */
 
 /*CSS Reset*/
-body, footer, article, section, aside, figure, figcaption, div{
+body, footer, article, section, aside, figure, figcaption, div, table, tbody, tr, th, td{
   margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,6 +21,46 @@ body{
   display: block;
 }*/
 
+/*table styles*/
+tbody, th, td {
+  border: 1px solid #2D2D4E;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 1%;
+}
+
+
+/*form style rules*/
+input {
+  width: 100%;
+  margin-bottom: 1%;
+  display: block;
+}
+
+fieldset {
+  width: 80%;
+  display: block;
+  margin: auto;
+  width: 50%;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 2%;
+}
+
+form .btn {
+  width: 50%;
+  display: block;
+  margin: auto;
+  width: 80%;
+}
 
 
 /*Navigation rules*/
@@ -253,6 +293,12 @@ footer a{
     color: #4A4E69;
   }
 
+  /*rules for the aside*/
+  aside {
+    background-color: #C9ADA7;
+    border-radius: 10px;
+  }
+
 }
 
 
@@ -339,7 +385,7 @@ footer a{
   }
 
 
-  /*rules for the aside*/
+  /*rules for the aside
   aside {
     background-color: #C9ADA7;
     border-radius: 10px;
@@ -350,8 +396,11 @@ footer a{
     font-weight: bold;
     font-size: 1.4em;
     line-height: 200%;
-  }
+  }*/
 
+  table tr:nth-of-type(odd) {
+    background-color: #C9ADA7;
+  }
 
 }
 
