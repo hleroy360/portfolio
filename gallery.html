@@ -22,10 +22,10 @@ Date: 11/19/2023
       <div class="tab-desk">
         <div class="header-top">
           <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
-          <div class="header-text">
+          <figcaption>
             <h1>Gallery</h1>
-            <h2>Just a bunch of photos right now</h2>
-          </div>
+            <h2>Just a bunch of photos right now.</h2>
+          </figcaption>
         </div>
 
         <hr>
@@ -43,10 +43,10 @@ Date: 11/19/2023
       <div class="mobile">
         <div class="header-top">
           <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
-          <div class="header-text">
-            <h1>About Me</h1>
-            <h2>Welcome to my website!</h2>
-          </div>
+          <figcaption>
+            <h1>Gallery</h1>
+            <h2>Just a bunch of photos right now.</h2>
+          </figcaption>
         </div>
 
         <hr>
@@ -66,6 +66,24 @@ Date: 11/19/2023
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
     <main>
+
+      <h2 class="center">Cat sounds</h2>
+      <div id="media" class="grid">
+        <audio controls="controls">
+          <source src="media/shari_meow-47485.mp3" type="audio/mp3">
+          <source src="media/shari_meow-47485.mp3" type="audio/ogg">
+          <track kind="descriptions" src="media/descriptions-1.vtt" srclang="en" label="Cat Sound 1"/>
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+
+        <audio controls="controls">
+          <source src="media/cat-meow-14536.mp3" type="audio/mp3">
+          <source src="media/cat-meow-14536.ogg" type="audio/ogg">
+          <track kind="descriptions" src="media/descriptions-2.vtt" srclang="en" label="Cat Sound 2"/>
+          <p>Your browser does not support the audio element.</p>
+        </audio>
+      </div>
+
       <h2 class="center">My Cat</h2>
       <div id="cat" class="grid">
         <figure>
@@ -85,6 +103,8 @@ Date: 11/19/2023
           <figcaption>Isabelle from the game Animal Crossing: New Horizons</figcaption>
         </figure>
       </div>
+
+
     </main>
 
 

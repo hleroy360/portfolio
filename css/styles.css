@@ -165,6 +165,12 @@ footer a{
   text-align: center;
 }
 
+
+#media {
+  width: 50%;
+  margin: 0 auto;
+}
+
 #cat{
   padding-bottom: 5%;
   text-align: center;
