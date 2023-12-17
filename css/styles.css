@@ -219,7 +219,7 @@ footer a{
 /*The grid set up for navigation and main*/
 .nav-grid ul{
   display:grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto;
   grid-gap: 10px;
 }
 
@@ -242,6 +242,21 @@ footer a{
 
 .project-grid img {
   width: 80%;
+}
+
+/*menu*/
+#menu-links {
+  display: none;
+}
+
+#menu-icon {
+  margin: 0 auto;
+  font-size: 3em;
+  margin-left: 5%;
+}
+
+#menu-icon-container {
+  text-align: center;
 }
 
 
@@ -304,6 +319,7 @@ footer a{
     background-color: #C9ADA7;
     border-radius: 10px;
   }
+  
 
 }
 
@@ -367,6 +383,7 @@ footer a{
     display:grid;
     grid-template-columns: auto auto auto auto;
     grid-gap: 20px;
+    padding-bottom: 10px;
   }
 
   .grid {

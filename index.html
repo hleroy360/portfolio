@@ -18,25 +18,22 @@ Date: 11/19/2023
 
   <body>
     <header>
+
+      <!--tab-desk menu-->
       <div class="tab-desk">
         <div class="header-top">
-          <figure>
+          <figure id="tab-desk-logo">
             <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
             <figcaption>
               <h1>About Me</h1>
               <h2>Welcome to my website!</h2>
             </figcaption>
           </figure>
-          <div class="header-text">
-
-          </div>
         </div>
-
         <hr>
-  
         <nav class="nav-grid">
           <ul>
-            <li><a href="index.html">About Me</a></li>
+            <li ><a href="index.html">About Me</a></li>
             <li><a href="projects.html">Projects</a></li>
             <li><a href="gallery.html">Gallery</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -44,28 +41,33 @@ Date: 11/19/2023
         </nav>
       </div>
 
+      <!--mobile menu-->
       <div class="mobile">
         <div class="header-top">
-          <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
-          <div class="header-text">
-            <h1>About Me</h1>
-            <h2>Welcome to my website!</h2>
-          </div>
-        </div>
-
+          <figure id="mobile-logo">
+            <img class="round" src="images/SophieKitten.png" alt="a kitten playing with a toy">
+            <figcaption>
+              <h1>About Me</h1>
+              <h2>Welcome to my website!</h2>
+            </figcaption>
+          </figure>
         <hr>
-  
-        <nav class="nav-grid">
-          <ul >
-            <li><a href="index.html">About Me</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul> 
-        </nav>
-      </div>
 
+        <nav class="nav-grid">  
+          <div id="menu-links">
+            <ul>
+              <li><a href="index.html">About Me</a></li>
+              <li><a href="projects.html">Projects</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div id="menu-icon-container"><a id="menu-icon" onclick="hamburger()">&#9776;</a></div>
+        </nav>
+        
+      </div>
       <hr>
+
     </header>
 
     <!--Holds everything in the body that isn't in the header or footer. In this case, it will hold the different sections for the page as articles. Except for the gallery page, which will use divs containing img tags.-->
@@ -133,7 +135,7 @@ Date: 11/19/2023
     </main>
 
 
-
+    <script src="scripts/script.js"></script>
   </body>
 
   <footer>
